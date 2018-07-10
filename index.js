@@ -5,25 +5,25 @@ import Router from 'sheet-router'
 import reducer from './reducer'
 
 import Home from './components'
-import Intro from './components/intro'
-import Work from './components/work'
+import Menu from './components/menu'
 import About from './components/about'
+import Location from './components/location'
+import Hours from './components/hours'
 import Contact from './components/contact'
-import Elements from './components/elements'
 
 const initView = document.createElement('div')
 document.querySelector('main').appendChild(initView)
 
 const initState = {
-  title: 'Dimension Yoyo',
+  title: 'Camel Grill',
   route: '/',
   routeHistory: [],
   menu: [
-    {route: '/intro', label: 'Intro'},
-    {route: '/work', label: 'Work'},
+    {route: '/menu', label: 'Menu'},
     {route: '/about', label: 'About'},
-    {route: '/contact', label: 'Contact'},
-    {route: '/elements', label: 'Elements'}
+    {route: '/location', label: 'Location'},
+    {route: '/hours', label: 'Hours'},
+    {route: '/contact', label: 'Contact'}
   ]
 }
 
@@ -32,11 +32,11 @@ const { getState, dispatch, subscribe } = createStore(reducer, initState)
 const route = Router({ default: '/404' }, [
   ['/', (params) => Home],
   ['/info', (params) => Info],
-  ['/intro', (params) => Intro],
-  ['/work', (params) => Work],
+  ['/menu', (params) => Menu],
   ['/about', (params) => About],
-  ['/contact', (params) => Contact],
-  ['/elements', (params) => Elements]
+  ['/location', (params) => Location],
+  ['/hours', (params) => Hours],
+  ['/contact', (params) => Contact]
 ])
 
 subscribe(() => {

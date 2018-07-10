@@ -6,11 +6,17 @@ module.exports = (state, dispatch) => html`
     <div>
       <div id="wrapper">
       <div id="main">
-      <article id="about">
+      <article>
       ${back(dispatch)}
-        <h2 class="major">About</h2>
-        <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-        <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+      <h2 class="major">About</h2>
+      <p>Hello! The Camel Grill is a company set up by Abdalla Tammam to share his skills as a chef.
+        Originally we opened as a food carvan but now we have our own kitchen on Dixon Street!
+        We would love to take the chance to welcome you into our kitchen.
+        Outside of running the business, I love to spend time messing around in my kitchen at home creating new dishes and sharing food with family and friends.</p>
+      <span class="image main"><img src="images/cuba.jpg" alt="" /></span>
+      <p>Abdalla cooking up a feast for Cuba Dupa</p>
+      <span class="image main"><img src="images/humble.jpg" alt="" /></span>
+      <p>Humble beginnings as Abdalla paints his food caravan</p>
       </article>
       </div>
         ${footer(state, dispatch)}

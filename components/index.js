@@ -6,14 +6,11 @@ module.exports = (state, dispatch) => html`
     <div>
       <div id="wrapper">
       <header id="header">
-        <div class="logo">
-          <span class="icon fa-github"></span>
-        </div>
         <div class="content">
           <div class="inner">
             <h1>${state.title}</h1>
-            <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a></p>
-            <p>Ported to <a href="https://github.com/maxogden/yo-yo">yoyo</a>, a tiny library for building React style modular UI components, by <a href="http://bradymat.com">bradymat</a></p>
+            <p>Camel Grill brings a combination of mouth watering flavors of the middle east to Wellington.</p>
+            <p>Quality hand made food with authentic spices and fresh ingredients.</p>
           </div>
         </div>
         ${nav(state, dispatch)}
