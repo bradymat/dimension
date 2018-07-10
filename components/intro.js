@@ -1,5 +1,4 @@
 import html from 'yo-yo'
-import header from './header'
 import footer from './footer'
 import back from './buttons/back'
 

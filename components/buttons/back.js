@@ -1,4 +1,4 @@
 import html from 'yo-yo'
 import handler from '../handlers/back'
 
-export default (dispatch) => html`<button onclick=${() => handler(dispatch)} >Back</button>`
+export default (dispatch) => html`<div class="close" onclick=${() => handler(dispatch)} ></div>`

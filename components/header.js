@@ -10,8 +10,8 @@ module.exports = ({ title, menu }, dispatch) => {
   <div class="content">
     <div class="inner">
       <h1>${title}</h1>
-      <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-      for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+      <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a></p>
+      <p>Ported to <a href="https://github.com/maxogden/yo-yo">yoyo</a>, a tiny library for building React style modular UI components, by <a href="http://bradymat.com">bradymat</a></p>
     </div>
   </div>
   ${nav(menu)}

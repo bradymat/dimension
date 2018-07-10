@@ -6,13 +6,17 @@ import reducer from './reducer'
 
 import Home from './components'
 import Intro from './components/intro'
+import Work from './components/work'
+import About from './components/about'
+import Contact from './components/contact'
+import Elements from './components/elements'
 import The404 from './components/404'
 
 const initView = document.createElement('div')
 document.querySelector('main').appendChild(initView)
 
 const initState = {
-  title: 'Dimension Quickstart',
+  title: 'Dimension Yoyo',
   route: '/',
   routeHistory: [],
   menu: [
@@ -30,6 +34,10 @@ const route = Router({ default: '/404' }, [
   ['/', (params) => Home],
   ['/info', (params) => Info],
   ['/intro', (params) => Intro],
+  ['/work', (params) => Work],
+  ['/about', (params) => About],
+  ['/contact', (params) => Contact],
+  ['/elements', (params) => Elements],
   ['/404', (params) => The404]
 ])
 
