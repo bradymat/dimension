@@ -5,16 +5,23 @@ import Router from 'sheet-router'
 import reducer from './reducer'
 
 import Home from './components'
-import Info from './components/info'
+import Intro from './components/intro'
 import The404 from './components/404'
 
 const initView = document.createElement('div')
 document.querySelector('main').appendChild(initView)
 
 const initState = {
-  title: 'Quickstart',
+  title: 'Dimension Quickstart',
   route: '/',
-  lastRoute: 'lemon'
+  routeHistory: [],
+  menu: [
+    {route: '/intro', label: 'Intro'},
+    {route: '/work', label: 'Work'},
+    {route: '/about', label: 'About'},
+    {route: '/contact', label: 'Contact'},
+    {route: '/elements', label: 'Elements'}
+  ]
 }
 
 const { getState, dispatch, subscribe } = createStore(reducer, initState)
@@ -22,6 +29,7 @@ const { getState, dispatch, subscribe } = createStore(reducer, initState)
 const route = Router({ default: '/404' }, [
   ['/', (params) => Home],
   ['/info', (params) => Info],
+  ['/intro', (params) => Intro],
   ['/404', (params) => The404]
 ])
 

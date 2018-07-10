@@ -1,8 +1,13 @@
 module.exports = (state, { type, payload }) => {
+  const newState = require('clone')(state)
   switch (type) {
     case 'CHANGE_ROUTE':
-      return { ...state, lastRoute: state.route, route: payload }
+      newState.routeHistory.push(newState.route)
+      return { ...newState, route: payload }
+    case 'BACK_BUTTON':
+      newState.route = newState.routeHistory.pop()
+      return newState
     default:
-      return { ...state }
+      return newState
+    }
   }
-}
