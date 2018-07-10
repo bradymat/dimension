@@ -10,7 +10,6 @@ import Work from './components/work'
 import About from './components/about'
 import Contact from './components/contact'
 import Elements from './components/elements'
-import The404 from './components/404'
 
 const initView = document.createElement('div')
 document.querySelector('main').appendChild(initView)
@@ -37,8 +36,7 @@ const route = Router({ default: '/404' }, [
   ['/work', (params) => Work],
   ['/about', (params) => About],
   ['/contact', (params) => Contact],
-  ['/elements', (params) => Elements],
-  ['/404', (params) => The404]
+  ['/elements', (params) => Elements]
 ])
 
 subscribe(() => {

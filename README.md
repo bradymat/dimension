@@ -2,9 +2,7 @@
 
 yo-yo redux sheet-router
 
-using the lemon placeholder system
-
-##demo
+###demo
 
 https://bradymat.github.io/quickstart/
 
