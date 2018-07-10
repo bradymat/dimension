@@ -81,10 +81,10 @@ module.exports = (state, dispatch) => html`
           </table>
 
 
-        <span class="image main"><img src="images/wrap.jpg" alt="" /></span>
+        <span class="image main"><img src="https://user-images.githubusercontent.com/20106637/42531731-d4eec106-84d8-11e8-9a8d-3e493feec289.jpg" alt="" /></span>
         Wrap
 
-        <span class="image main"><img src="images/shish.jpg" alt="" /></span>
+        <span class="image main"><img src="https://user-images.githubusercontent.com/20106637/42531716-ce7b3fd4-84d8-11e8-9f8e-0de6282ff035.jpg" alt="" /></span>
         Shish Kebabs
       </article>
       </div>
