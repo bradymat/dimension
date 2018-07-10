@@ -6,7 +6,7 @@ module.exports = (state, dispatch) => html`
     <div>
       <div id="wrapper">
       <div id="main">
-      <article id="contact">
+      <article>
       ${back(dispatch)}
         <h2 class="major">Contact</h2>
         <form method="post" action="#">

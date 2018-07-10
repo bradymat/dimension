@@ -6,7 +6,7 @@ module.exports = (state, dispatch) => html`
     <div>
       <div id="wrapper">
       <div id="main">
-      <article id="elements">
+      <article>
       ${back(dispatch)}
         <h2 class="major">Elements</h2>
 
